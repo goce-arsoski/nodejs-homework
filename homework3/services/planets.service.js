@@ -43,8 +43,6 @@ exports.editPlanet = async (id, planetInfo) => {
 
 exports.deletePlanet = async id => {
   const allPlanets = await Planet.getPlanets();
-  const foundPlanet = allPlanets.find(planet => planet.id == id);
-
   const updatedPlanets = allPlanets.filter(planet => planet.id != id);
 
   await Planet.savePlanets(updatedPlanets);
