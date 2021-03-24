@@ -1,0 +1,49 @@
+.planets-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  place-items: center;
+  margin-top: 150px;
+}
+
+.planet {
+  width: 250px;
+  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 6);
+}
+
+.planet h6 {
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navigation {
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 6);
+  background: #107ab0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.navigation-item {
+  margin-left: 1rem;
+}
+
+.navigation-link {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.navigation-link:hover {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+.card {
+    width: 18rem;
+    margin: auto;
+}

@@ -1,0 +1,14 @@
+<%- include('../includes/header.ejs') %>
+  <h1>Welcome to Planets</h1>
+  <div class="planets-container">
+    <% for(const planet of planets) { %>
+      <div class="planet">
+        <h6>
+          <%= planet.name %>
+        </h6>
+
+        <a href=<%= "/planets/" + planet.id %> class="btn btn-info w-100 d-block">See More</a>
+      </div>
+    <% } %>
+  </div>
+<%- include('../includes/footer.ejs') %>

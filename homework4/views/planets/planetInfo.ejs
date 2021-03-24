@@ -1,0 +1,15 @@
+<%- include('../includes/header.ejs') %>
+  <div class="card">
+    <div class="card-header">
+      <h6 class="card-title">
+        <%= planet.name %>
+      </h6>
+    </div>
+    <div class="card-body">
+      <p>
+        Distance from Sun: <%= planet.distanceFromSun %><br>
+        Size: <%= planet.size %>
+      </p>
+    </div>
+  </div>
+<%- include('../includes/footer.ejs') %>
